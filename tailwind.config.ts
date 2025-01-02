@@ -27,7 +27,7 @@ const config: Config = {
       backgroundImage: {
         'hero-pattern': "url('/hero-pattern.png')",
         "dark-gradient":
-          "linear-gradient(180deg, #182632 100%, #071521 100%)",
+          "linear-gradient(180deg, #182632, #071521)",
         "ulltimate-card-gradient":
           "linear-gradient(#293641, hsla(0, 0%, 100%, 0))",
         "news-card-gradient":

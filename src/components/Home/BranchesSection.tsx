@@ -49,16 +49,16 @@ function BranchesSection() {
       return(
     <div className = "max-width w-full pb-20 max-md:pb-[85px]" >
       <div className="flex justify-center mb-14 max-md:mb-4 max-sm:mb-12">
-        <h1 className="title_stl text-center w-full max-w-[382px] max-md:leading-[64px]">
+        <h1 className="title_stl text-center w-full max-w-[382px] max-sm:max-w-60 ">
           <span className="title_stl_primary">Our path</span>
           {"to success"}
         </h1>
       </div>
 
-      <div className="flex gap-x-12 overflow-x-auto scrollbar-hide  pl-[121px] max-md:px-5 max-sm:overflow-x-visible max-sm:flex-col">
+      <div className="flex gap-x-12 overflow-x-scroll scrollbar-hide pl-[121px] max-md:px-5 max-sm:overflow-x-visible max-sm:flex-col">
        {slide.map((item) => (
-        <div key={item.id} className="flex border-r border-solid border-navborderlategray pt-6 pr-12 gap-[52px] max-sm:py-12 max-sm:border-r-0 max-sm:border-y max-sm:flex-col">
-          <div className="min-w-[445px] flex flex-col items-start  max-sm:max-w-[345px]">
+        <div key={item.id} className="flex border-r border-solid border-navborderlategray pt-6 pr-12 gap-[52px] max-sm:py-12 max-sm:pr-0 max-sm:border-r-0 max-sm:border-y max-sm:flex-col">
+          <div className="min-w-[445px] flex flex-col items-start max-sm:min-w-fit max-sm:max-w-[345px]">
             <span className="font-ibm-plex text-xl font-medium mb-3 max-sm:text-sm max-sm:leading-6">
               {item.year}
             </span>
