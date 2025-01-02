@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  	@apply leading-[normal] m-0 bg-gray;
+} 
+
+.max-width {
+    @apply max-w-[1440px] mx-auto;
+}
+
+
+@layer utilities {
+   .nav_link {
+        @apply relative w-fit block after:block after:content-[''] after:absolute after:h-[3px]
+after:bg-green-300 after:w-full after:scale-x-0 after:transition after:hover:scale-x-100 after:duration-300
+after:origin-right;
+    }
+   .title_stl {
+        @apply  font-ibm-plex text-5xl leading-[60px] font-semibold max-md:text-[44px] max-md:leading-[56px] max-md:font-bold max-sm:text-2xl;
+    }
+   .title_stl_primary {
+        @apply block text-primary;
+    }
+}
